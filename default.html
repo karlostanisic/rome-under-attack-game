@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Rome Under Attack!</title>
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet"> 
+
+
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    
+
+    
+
+    <div id="wrapper">
+        <div class="game-info">
+            <div>SCORE:<span id="score"></span></div>
+            <div>DAMAGE:<span id="damage"></span>%</div>
+            <div>WMD:<span id='wmd'></span></div>
+        </div>
+        <div class="high-score">
+            <div>HIGH SCORE</div>
+            <div id="high-score"></div>
+            <div id="high-score-initials"></div>
+        </div>
+        <div id="game-start-wrapper" class="game-over-wrapper">
+            <div id="game-start" class="game-over">
+                <div class="game-over-text">
+                    ROME UNDER ATTACK
+                </div>
+                <div class='game-over-score'>
+                    YOU NEED TO PROTECT ROME FROM BOMBS. USE LEFT MOUSE BUTTON TO FIRE AND
+                    MOUSE TO AIM. EVERY 10000 PTS YOU WILL GET WEAPON OF MASS DESTRUCTION. 
+                    PRESS SPACE TO USE IT AND DESTROY EVERY BOMB ON SCREEN. GOOD LUCK!
+                </div>
+                <button id="play">Play</button>
+            </div>
+        </div>
+        <div id="game-over-wrapper" class="game-over-wrapper">
+            <div id="game-over" class="game-over">
+                <div class="game-over-text">GAME OVER</div>
+                <div class='game-over-score'>YOUR SCORE IS <span id="game-over-score-points"></span></div>
+                <div id='game-over-high-score'>
+                    CONGRATULATIONS,<br>
+                    THAT IS NEW HIGH SCORE!<br>
+                    ENTER YOUR INITIALS:<br>
+                    <input id="initials-input" type="text" name='initials' maxlength="3" size="3">
+                    <button id="submit-initials">OK</button>
+                </div>
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/resources.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+    <script type="text/javascript" src="js/sprite.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

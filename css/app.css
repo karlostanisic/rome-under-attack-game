@@ -1,0 +1,75 @@
+canvas {
+    display: block;
+}
+
+#wrapper {
+    width: 512px;
+    position: relative;
+    background: black;
+    color: green;
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    padding-top: .5em;
+}
+
+#wrapper span {
+    color: red;
+}
+
+.game-info {
+    float:left;
+    margin-left: .5em;
+}
+
+.high-score {
+    float: right;
+    text-align: right;
+    margin-right: .5em;
+}
+
+.game-over-wrapper {
+    display: none;
+    width: 512px;
+    height: 480px;
+    vertical-align: middle;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+    
+}
+
+.game-over{
+    
+    position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width:100%;
+    
+    
+    font-family: 'Press Start 2P', monospace;
+    
+}
+
+.game-over button{
+    font-family: 'Press Start 2P', monospace;
+    cursor: pointer;
+    font-size: 150%;
+}
+.game-over-text {
+    font-size: 200%;
+    color: red;
+}
+
+#game-over-high-score input {
+    font-family: 'Press Start 2P', monospace;
+    text-transform: uppercase;
+    font-size: 150%;
+    
+    
+}
+
+.game-over-overlay {
+    background-color: black;
+    opacity: .5;
+}
